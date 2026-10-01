@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/26" fx:controller="com.mycompany.tableview_producto.ProductointerfaceController">
+    <stylesheets>
+        <URL value="@/styles/productointerface.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="tblProductos" layoutX="240.0" layoutY="200.0" prefHeight="200.0" prefWidth="360.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="colNombre" prefWidth="75.0" text="Nombre" />
+            <TableColumn fx:id="colPrecio" prefWidth="75.0" text="Precio" />
+            <TableColumn fx:id="colTalla" prefWidth="75.0" text="Talla" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtId" layoutX="102.0" layoutY="29.0" />
+      <TextField fx:id="txtNombre" layoutX="103.0" layoutY="73.0" />
+      <TextField fx:id="txtPrecio" layoutX="104.0" layoutY="111.0" />
+      <TextField fx:id="txtTalla" layoutX="105.0" layoutY="154.0" />
+      <Label layoutY="33.0" text="Ingresa el id" />
+      <Label layoutY="77.0" text="Ingresa el nombre" />
+      <Label layoutX="-2.0" layoutY="115.0" text="Ingresa el precio" />
+      <Label layoutY="158.0" text="Ingresa la tabka" />
+<Button fx:id="agregaProductos" onAction="#agregaProductos" layoutX="23.0" layoutY="200.0" mnemonicParsing="false" text="Agregar a la tabla" />   </children>
+</AnchorPane>

@@ -1,0 +1,6 @@
+com\mycompany\tableview_producto\PrimaryController.class
+com\mycompany\tableview_producto\SecondaryController.class
+module-info.class
+com\mycompany\tableview_producto\ProductointerfaceController.class
+com\mycompany\tableview_producto\App.class
+com\mycompany\tableview_producto\Producto.class
